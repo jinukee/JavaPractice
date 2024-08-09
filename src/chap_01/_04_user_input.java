@@ -8,10 +8,10 @@ public class _04_user_input {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("What is your name? ");
-        String name = scanner.nextLine();
+        String name = scanner.nextLine(); // nextLine() method separates string value with \n(null terminating) value
         System.out.println("How old are you? ");
-        int age = scanner.nextInt();
-        scanner.nextLine(); // nextInt() method can't skip \n value
+        int age = scanner.nextInt(); // but nextInt() method can't skip \n value
+        scanner.nextLine(); // So we call nextLine() method before calling nextLine() method to skip \n value
         System.out.println("What is your favorite food?");
         String food = scanner.nextLine();
 
